@@ -1,0 +1,385 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Barlow', sans-serif;
+}
+p, span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+body{
+    background-color: #f8f8f8;
+}
+html {
+    height: 100%
+}
+
+p {
+    color: grey
+}
+
+#heading {
+    text-transform: uppercase;
+    color: #86cbc9;
+    font-weight: normal
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input, #msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #86cbc9;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    /* width: 100%; */
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    background-color: #ffffff00;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #86cbc9;
+    outline-width: 0
+}
+
+#msform .action-button {
+    width: 100px;
+    background: #86cbc9;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background-color: #86cbc9
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #000000
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #86cbc9;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: #86cbc9;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #86cbc9
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f13e"
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f030"
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #86cbc9
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #86cbc9
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+input.radio-cash {
+    width: 20px;
+    height: 20px;
+}
+
+label.radio-label {
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 5px;
+    font-family: 'Barlow';
+    letter-spacing: .8px;
+}
+
+input[type="number"] {
+    width: 100%;
+}
+
+div#cash_id {
+    display: none;
+}
+div#pensions_id {
+    display: none;
+}
+
+.side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    border-radius: 8px;
+    padding: 30px 30px 30px 30px;
+    /* color: #fff; */
+    border: 1px solid #0000001a;
+    background: #ffffff;
+    box-shadow: rgb(0 0 0 / 0%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+    margin-top: 30px;
+}
+
+.side h4 {
+    font-size: 18px;
+    text-align: center;
+}
+.side span {
+    font-size: 16px;
+    color: #2eaba7;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.side h3 {
+    font-size: 22px;
+    color: #239d99;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+tbody th {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card {
+    z-index: 0;
+    border: 1px solid #00000029;
+    position: relative;
+    padding: 40px !important;
+    border-radius: 8px;
+}
+
+label {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+button#donate_button:hover {
+    background: #000000bf !important;
+    color: #fff;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #363636;
+    border-color: #464646;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #86cbc9;
+    border-color: #86cbc9;
+    font-family: 'Barlow';
+    border-radius: 8px !important;
+    padding: 10px 35px !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+div#money_owed {
+    display: none;
+}
+
+div#gold_silver {
+    display: none;
+}
+div#my_share {
+    display: none;
+}
+div#ISAs_trust {
+    display: none;
+}
+div#Cryptocurrency_id {
+    display: none;
+}
+
+div#business_assets {
+    display: none;
+}
+div#money_mortgage {
+    display: none;
+}
+div#utility {
+    display: none;
+}
+div#mortgage_new {
+    display: none;
+}
+
+div#busi_utility {
+    display: none;
+}
+div#credit {
+    display: none;
+}
+div#overdraft_id {
+    display: none;
+}
+div#personalloan {
+    display: none;
+}
+
+div#real_estate {
+    display: none;
+}
+div#live_stock {
+    display: none;
+}
+div#cash_id_new {
+    display: none;
+}
+
+
